@@ -1,0 +1,6 @@
+.qodo/
+**/__pycache__/
+private
+.vscode/
+.venv
+data

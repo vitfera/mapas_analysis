@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mapas - Volume de Dados</title>
+  <link rel="stylesheet" href="data_volume.css">
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Mapas - Volume de Dados</h1>
+  </header>
+  
+  <main>
+    <div class="loading-container" id="loading">
+      <div class="loading-spinner"></div>
+      <p>Carregando dados...</p>
+    </div>
+    
+    <div class="error-container" id="error" style="display: none;">
+      <h2>Erro ao carregar dados</h2>
+      <p>Não foi possível carregar os dados. Por favor, tente novamente mais tarde.</p>
+      <button id="retry-button">Tentar novamente</button>
+    </div>
+    
+    <div class="cards-container" id="cards-container">
+      <!-- Cards will be dynamically generated here -->
+    </div>
+  </main>
+  
+  <footer>
+    <p>&copy; 2025 Mapas - Volume de Dados</p>
+  </footer>
+  
+  <script src="data_volume.js"></script>
+</body>
+</html>

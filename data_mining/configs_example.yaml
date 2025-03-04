@@ -1,0 +1,40 @@
+data_folder: "data"
+apis:
+  - file_name: "secult_subsite.json"
+    url: "https://mapacultural.secult.ce.gov.br/api/subsite/find"
+    enabled: False
+    append: False
+    params:
+      "@select": "*"
+      "@files": "(avatar,avatar.avatarSmall):url"
+      "@limit": 8 
+
+  - file_name: "minc_subsite.json"
+    url: "https://mapa.cultura.gov.br/api/subsite/find"
+    enabled: False
+    append: False
+    params:
+      "@select": "*"
+      "@files": "(avatar,avatar.avatarSmall):url"
+      "@limit": 8
+  
+  - file_name: "versions.json"
+    url: "https://mapacultural.secult.ce.gov.br/api/site/version"
+    enabled: False
+    append: False
+
+  - file_name: "versions.json"
+    url: "https://mapa.cultura.gov.br/api/site/version"
+    enabled: False
+    append: True
+
+  - file_name: "infos.json"
+    url: "https://mapacultural.secult.ce.gov.br/api/site/info"
+    enabled: True
+    append: False
+
+  - file_name: "infos.json"
+    url: "https://mapa.cultura.gov.br/api/site/info"
+    enabled: True
+    append: True
+
