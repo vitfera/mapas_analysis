@@ -149,6 +149,12 @@ footer {
   color: var(--primary-color);
 }
 
+.stat-value-secondary {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: var(--accent-color);
+}
+
 .stat-label {
   font-size: 0.875rem;
   color: var(--text-secondary);

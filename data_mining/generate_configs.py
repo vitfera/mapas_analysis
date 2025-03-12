@@ -58,6 +58,8 @@ list_of_apis = [
     {"file_name": "sao_goncalodo_amarante", "url": "https://mapacultural.saogoncalodoamarante.ce.gov.br"},
     {"file_name": "natal", "url": "https://mapacultural.natal.rn.gov.br"},
     {"file_name": "amapa", "url": "https://mapacultural.ap.gov.br"},
+    {"file_name": "aparecida", "url": "https://portaldacultura.aparecida.go.gov.br"},
+
     
 ]
 

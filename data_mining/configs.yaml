@@ -376,6 +376,14 @@ apis:
     '@select': '*'
     '@files': (avatar,avatar.avatarSmall):url
     '@limit': 8
+- file_name: aparecida_subsite.json
+  url: https://portaldacultura.aparecida.go.gov.br/api/subsite/find
+  enabled: true
+  append: false
+  params:
+    '@select': '*'
+    '@files': (avatar,avatar.avatarSmall):url
+    '@limit': 8
 - file_name: versions.json
   url: https://mapa.cultura.gov.br/api/site/version
   enabled: true
@@ -611,6 +619,11 @@ apis:
   enabled: true
   append: true
   params: {}
+- file_name: versions.json
+  url: https://portaldacultura.aparecida.go.gov.br/api/site/version
+  enabled: true
+  append: true
+  params: {}
 - file_name: infos.json
   url: https://mapa.cultura.gov.br/api/site/info
   enabled: true
@@ -843,6 +856,11 @@ apis:
   params: {}
 - file_name: infos.json
   url: https://mapacultural.ap.gov.br/api/site/info
+  enabled: true
+  append: true
+  params: {}
+- file_name: infos.json
+  url: https://portaldacultura.aparecida.go.gov.br/api/site/info
   enabled: true
   append: true
   params: {}

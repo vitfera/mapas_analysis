@@ -25,7 +25,7 @@ const mockData = [
       "projects_count": 317,
       "opportunities_count": 86,
       "url": "http://culturaenlinea.uy/api/site/info",
-      "img": "https://culturaenlinea.uy/assets/img/logo-site.png"
+      "img": "/painels/data_volume/logo/mapa-uruguai.png"
   },
   {
       "name": "Pontos de Mem\u00f3ria/BR",
@@ -389,6 +389,21 @@ const mockData = [
     "name": "Mapa Cultural Amapá"
   },
 
+  {
+
+    "description": "A Plataforma de Cultura de Aparecida de Goiânia é uma plataforma colaborativa que reúne informações sobre agentes, espaços, eventos, projetos culturais e oportunidades",
+    "version": "v7.5.27",
+    "timezone": "Etc/GMT+3",
+    "agents_count": 1687,
+    "spaces_count": 21,
+    "events_count": 14,
+    "projects_count": 28,
+    "opportunities_count": 20,
+    "url": "https://portaldacultura.aparecida.go.gov.br/api/site/info",
+    "img": "https://portaldacultura.aparecida.go.gov.br/assets/img/logoAparecida.img.1gg72.png",
+    "name": "Mapa Cultural Aparecida"
+  },
+
 ]
 
 // DOM Elements
@@ -396,6 +411,7 @@ const cardsContainer = document.getElementById('cards-container');
 const loadingElement = document.getElementById('loading');
 const errorElement = document.getElementById('error');
 const retryButton = document.getElementById('retry-button');
+const totalSummaryElement = document.getElementById('total-summary');
 
 // Event Listeners
 retryButton.addEventListener('click', fetchData);
@@ -435,12 +451,24 @@ async function fetchData() {
 
     const data = mockData;
 
+    // Calculate total summary
+    const totalSummary = data.reduce((acc, item) => {
+      acc.agents_count += item.agents_count;
+      acc.spaces_count += item.spaces_count;
+      acc.events_count += item.events_count;
+      acc.projects_count += item.projects_count;
+      acc.opportunities_count += item.opportunities_count;
+      return acc;
+    }, { agents_count: 0, spaces_count: 0, events_count: 0, projects_count: 0, opportunities_count: 0 });
 
+    // Update header with total summary
+   
+    //totalSummaryElement.textContent = `Total: Agentes: ${formatNumber(totalSummary.agents)}, Espaços: ${totalSummary.spaces}, Eventos: ${totalSummary.events}, Projetos: ${totalSummary.projects}, Oportunidades: ${totalSummary.opportunities}`;
     
     // Simulate network delay
     await new Promise(resolve => setTimeout(resolve, 1000));
     
-    renderCards(data);
+    renderCards(data, totalSummary);
     hideLoading();
   } catch (error) {
     console.error('Error fetching data:', error);
@@ -450,9 +478,10 @@ async function fetchData() {
 }
 
 // Render all cards based on data
-function renderCards(data) {
+function renderCards(data, totalSummary) {
   cardsContainer.innerHTML = '';
-  
+  const first_card = createFirstCard(totalSummary, 9999)
+  cardsContainer.appendChild(first_card);
   data.forEach((item, index) => {
     const card = createCard(item, index);
     cardsContainer.appendChild(card);
@@ -559,6 +588,87 @@ function createCard(data, index) {
   card.appendChild(cardBody);
   
   // Render the chart after the card is added to the DOM
+  setTimeout(() => {
+    renderChart(data, `#chart-${index}`);
+  }, 100);
+  
+  return card;
+}
+
+
+function createFirstCard(data, index) {
+  const card = document.createElement('article');
+  card.className = 'card';
+  card.setAttribute('aria-labelledby', `card-title-${index}`);
+  
+  // Create card header
+  const cardHeader = document.createElement('div');
+  cardHeader.className = 'card-header';
+  
+  const cardTitle = document.createElement('h2');
+  cardTitle.id = `card-title-${index}`;
+  cardTitle.textContent = "Mapa Cultural (Total)"; // domain
+
+  cardHeader.appendChild(cardTitle);  
+
+  const cardVersion = document.createElement('p');
+  cardVersion.textContent = `Somatório de agentes, espaços, eventos, projetos e oportunidades em todos os mapas encontrados`;
+  cardHeader.appendChild(cardVersion);
+
+  // Create card body
+  const cardBody = document.createElement('div');
+  cardBody.className = 'card-body';
+    
+  // Create stats grid
+  const statsGrid = document.createElement('div');
+  statsGrid.className = 'card-stats';
+  
+  // Add stat items
+  const statItems = [
+    { label: 'Total de Agentes', value: formatNumber(data.agents_count) },
+    { label: 'Total de Espaços', value: formatNumber(data.spaces_count) },
+    { label: 'Total de Eventos', value: formatNumber(data.events_count) },
+    { label: 'Total de Projetos', value: formatNumber(data.projects_count) },
+    { label: 'Total de Oportunidades', value: formatNumber(data.opportunities_count) }
+  ];
+  
+  statItems.forEach(stat => {
+    const statItem = document.createElement('div');
+    statItem.className = 'stat-item';
+    
+    const statValue = document.createElement('div');
+    statValue.className = 'stat-value-secondary';
+    statValue.textContent = formatNumber(stat.value);
+    
+    const statLabel = document.createElement('div');
+    statLabel.className = 'stat-label';
+    statLabel.textContent = stat.label;
+    
+    statItem.appendChild(statValue);
+    statItem.appendChild(statLabel);
+    statsGrid.appendChild(statItem);
+  });
+  
+  cardBody.appendChild(statsGrid);
+
+  const cardImage = document.createElement('img');
+  cardImage.className = 'card-image';
+  cardImage.src = `https://avatars.githubusercontent.com/u/138939154`;
+
+  //cardImage.alt = `Imagem representativa para ${domain}`;
+  cardImage.loading = 'lazy';
+
+  // Create chart container
+  const chartContainer = document.createElement('div');
+  chartContainer.className = 'card-chart';
+  chartContainer.id = `chart-${index}`;
+  cardBody.appendChild(chartContainer);
+  
+  // Assemble the card
+  card.appendChild(cardHeader);
+  card.appendChild(cardImage);
+  card.appendChild(cardBody);
+  
   setTimeout(() => {
     renderChart(data, `#chart-${index}`);
   }, 100);
