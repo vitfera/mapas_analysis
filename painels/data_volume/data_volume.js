@@ -246,6 +246,7 @@ const mockData = [
       "img": "https://jpcultura.joaopessoa.pb.gov.br/assets/img/logo-Mapas-JP--img--3949863201-1694686300.png",
       "name": "JP CULTURA"
   },
+  /*
   {
       "name": "Mapas Culturais - Laguna SC",
       "description": "O Mapas Culturais \u00e9 uma plataforma livre para mapeamento cultural.",
@@ -258,6 +259,7 @@ const mockData = [
       "opportunities_count": 188,
       "url": "http://laguna.sc.mapas.cultura.gov.br/api/site/info"
   },
+  */
   {
       "name": "Mapa Cultural de Novo Hamburgo",
       "description": "#Sobre a plataforma Mapa Cultural de Novo Hamburgo\n\n**Mapas Culturais** \u00e9 um software livre para mapeamento colaborativo e gest\u00e3o da cultura que contribui para qualificar a gest\u00e3o p\u00fablica e para atualiza\u00e7\u00e3o frente \u00e0s novas Tecnologias da Informa\u00e7\u00e3o e Comunica\u00e7\u00e3o.\n\nO sistema \u00e9 alimentado de duas formas: pelo poder p\u00fablico, que insere na plataforma informa\u00e7\u00f5es sobre os **equipamentos culturais**, **programa\u00e7\u00f5es oficiais**, **editais**, e outros; e pela popula\u00e7\u00e3o em geral, que se cadastra como **agente de cultura** (individual ou coletivo) e pode divulgar suas pr\u00f3prias programa\u00e7\u00f5es.\n\nEm outubro de 2015, [Mapas Culturais](http://mapas.cultura.gov.br) foi adotado pelo [Sistema Nacional de Informa\u00e7\u00f5es e Indicadores Culturais (SNIIC)](http://sniic.cultura.gov.br/), o que permite a integra\u00e7\u00e3o dos sistemas.\n\nO [Minist\u00e9rio da Cultura](http://www.cultura.gov.br/), por meio da **Coordena\u00e7\u00e3o Geral de Monitoramento de Informa\u00e7\u00f5es Culturais**, oferece suporte a estados e munic\u00edpios que desejam implementar **Mapas Culturais**. Este apoio se d\u00e1 por meio da oferta de infraestrutura tecnol\u00f3gica e material de apoio e de forma\u00e7\u00e3o a  dist\u00e2ncia. \n\nA iniciativa \u00e9 fruto de uma parceria entre o [Instituto TIM](https://institutotim.org.br/project/mapas-culturais/) e o **MinC** e resultou na cria\u00e7\u00e3o de quatro plataformas a partir do software **Mapas Culturais**: a plataforma da [Rede Cultura Viva](http://culturaviva.gov.br/), que re\u00fane dados e endere\u00e7os dos **Pontos de Cultura**; o mapa [Museus BR](http://museus.cultura.gov.br/), maior plataforma de informa\u00e7\u00f5es sobre os museus do Brasil; o [Mapa das Bibliotecas](http://bibliotecas.cultura.gov.br/), mapeamento do **Sistema Nacional de Bibliotecas P\u00fablicas**; e o [Mapa da Cultura](http://mapas.cultura.gov.br), que integra os dados das tr\u00eas plataformas e do SNIIC.",
