@@ -1,0 +1,61 @@
+data_folder: "data"
+apis:
+  - file_name: "minc_subsite.json"
+    url: "https://mapa.cultura.gov.br/api/subsite/find"
+    enabled: True
+    append: False
+    params:
+      "@select": "*"
+      "@files": "(avatar,avatar.avatarSmall):url"
+      "@limit": 8 
+
+  - file_name: "minc_event.json"
+    url: "https://mapa.cultura.gov.br/api/event/find"
+    enabled: True
+    append: False
+    params:
+      "@select": "*"
+      "@files": "(avatar,avatar.avatarSmall):url"
+      "@limit": 1024
+
+  - file_name: "minc_space.json"
+    url: "https://mapa.cultura.gov.br/api/space/find"
+    enabled: False
+    append: False
+    params:
+      "@select": "*"
+      "@files": "(avatar,avatar.avatarSmall):url"
+      "@limit": 1024
+
+  - file_name: "minc_agent.json"
+    url: "https://mapa.cultura.gov.br/api/agent/find"
+    enabled: False
+    append: False
+    params:
+      "@select": "*"
+      "@files": "(avatar,avatar.avatarSmall):url"
+      "@limit": 1024
+
+  - file_name: "minc_project.json"
+    url: "https://mapa.cultura.gov.br/api/project/find"
+    enabled: True
+    params:
+      "@select": "*"
+      "@files": "(avatar,avatar.avatarSmall):url"
+      "@limit": 1024
+
+  - file_name: "minc_opportunity.json"
+    url: "https://mapa.cultura.gov.br/api/opportunity/find"
+    enabled: True
+    params:
+      "@select": "*"
+      "@files": "(avatar,avatar.avatarSmall):url"
+      "@limit": 1024
+
+  - file_name: "minc_event_simplified.json"
+    url: "https://mapa.cultura.gov.br/api/event/find"
+    enabled: True
+    params:
+      "@select": "id, name, owner.{id, name}, occurrences.{id, space.{name},rule}, shortDescription, longDescription, createTimestamp, updateTimestamp, classificacaoEtaria, terms, type"
+      "@files": "(avatar,avatar.avatarSmall):url"
+      "@limit": 1024
