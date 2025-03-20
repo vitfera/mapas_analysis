@@ -25,7 +25,7 @@ const mockData = [
       "projects_count": 317,
       "opportunities_count": 86,
       "url": "http://culturaenlinea.uy/api/site/info",
-      "img": "/painels/data_volume/logo/mapa-uruguai.png"
+      "img": "https://raw.githubusercontent.com/LabDoFuturo/mapas_analysis/refs/heads/main/painels/data_volume/logo/mapa-uruguai.png"
   },
   {
       "name": "Pontos de Mem\u00f3ria/BR",
