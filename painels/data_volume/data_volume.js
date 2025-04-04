@@ -348,7 +348,6 @@ const mockData = [
     "img": "https://mapacultural.agimos.org.br/assets/img/logo-UFPEL.img.18f4xve.png",
     "name": "Mapa Cultural AGIMOS"
   },
-
   {
     "name": "Mapa Cultural SGA",
     "description": "O Mapas Culturais é uma plataforma livre para mapeamento cultural.",
@@ -362,7 +361,6 @@ const mockData = [
     "url": "https://mapacultural.saogoncalodoamarante.ce.gov.br/api/site/info",
     "img": "https://mapacultural.saogoncalodoamarante.ce.gov.br/assets/img/mapa_cultural_logo_sga-3636033924-1689615327.png",
   }, 
-
   {
     "description": "O Mapas Culturais é uma plataforma colaborativa que reúne informações sobre agentes, espaços, eventos, projetos culturais e oportunidades",
     "version": "v7.4.28",
@@ -376,7 +374,6 @@ const mockData = [
     "img": "https://mapacultural.natal.rn.gov.br/assets/img/logo-site.img.2ci7k9.png",
     "name": "Mapa Cultural Natal"
   },
-
   {
     "description": "O Mapas Culturais é uma plataforma colaborativa que reúne informações sobre agentes, espaços, eventos, projetos culturais e oportunidades",
     "version": "v7.5.22",
@@ -390,7 +387,6 @@ const mockData = [
     "img": "https://mapacultural.ap.gov.br/assets/img/logo-site.img.1a3xgif.png",
     "name": "Mapa Cultural Amapá"
   },
-
   {
 
     "description": "A Plataforma de Cultura de Aparecida de Goiânia é uma plataforma colaborativa que reúne informações sobre agentes, espaços, eventos, projetos culturais e oportunidades",
@@ -405,7 +401,84 @@ const mockData = [
     "img": "https://portaldacultura.aparecida.go.gov.br/assets/img/logoAparecida.img.1gg72.png",
     "name": "Mapa Cultural Aparecida"
   },
-
+  {
+    "description": "O Mapas Culturais é uma plataforma colaborativa que reúne informações sobre agentes, espaços, eventos, projetos culturais e oportunidades",
+    "version": "v7.5.28",
+    "timezone": "Etc/GMT+3",
+    "agents_count": 140,
+    "spaces_count": 1,
+    "events_count": 2,
+    "projects_count": 0,
+    "opportunities_count": 4,
+    "url": "https://mapacultural.parauapebas.pa.gov.br/api/site/info",
+    "name": "Mapas Culturais"
+  },
+  {
+    "name": "Mapa Cultural de Lagoa Santa",
+    "description": "Plataforma livre, gratuita, colaborativa e interativa de mapeamento cultural desenvolvida para ser um instrumento transparente e colaborativo de gestão pública, permitindo aos gestores, agentes culturais e a todos os cidadãos conhecer, compartilhar e participar da produção e ações que integram a política cultural do Estado.\nO Mapa Cultural é uma ferramenta de comunicação  que busca visibilizar os eventos do calendário cultural, os projetos desenvolvidos e os espaços promovidos pelos agentes e instituições culturais de Lagoa Santa e, passa a ser também,  a plataforma de acesso e execução dos editais realizados pela Secretaria de Turismo e Cultura de Lagoa Santa.\nAlém de conferir a agenda de eventos, você também pode colaborar na gestão da cultura do estado: basta criar seu perfil de agente cultural. A partir do cadastro, fica mais fácil participar dos editais e programas da TCLS e também divulgar seus eventos, espaços ou projetos. Navegue, se informe, contribua e interaja com a gente!",
+    "version": "v5.6.20",
+    "timezone": "America/Sao_Paulo",
+    "agents_count": 517,
+    "spaces_count": 35,
+    "events_count": 34,
+    "projects_count": 24,
+    "opportunities_count": 17,
+    "url": "https://mapacultural.lagoasanta.mg.gov.br/api/site/info",
+    "img": "https://mapacultural.lagoasanta.mg.gov.br/assets/img/logo-site-1994187265-1684366444.png",
+    "name": "Mapa Cultural de Lagoa Santa"
+  },
+  {
+    "description": "O Balaio Cultural é o mapemento das expressões artísticas da UFPR produzidas por estudantes, professores, técnicos e terceirizados. O objetivo é compreender as demandas dos artistas e agentes culturais e a partir disso oferecer suporte, promover a difusão cultural interna e externa e fomentar a ocupação dos espaços da Universidade com arte e cultura.",
+    "version": "develop-minc",
+    "timezone": "UTC",
+    "agents_count": 5,
+    "spaces_count": 0,
+    "events_count": 0,
+    "projects_count": 0,
+    "opportunities_count": 1,
+    "url": "https://mapadacultura.ufpr.br/api/site/info",
+    "img": "https://mapadacultura.ufpr.br/files/agent/1/balaio-logo-2.png",
+    "name": "Balaio Cultural"
+  },
+  {
+    "description": "O Mapas Culturais é uma plataforma colaborativa que reúne informações sobre agentes, espaços, eventos, projetos culturais e oportunidades",
+    "version": "v7.5.13",
+    "timezone": "Etc/GMT+3",
+    "agents_count": 599,
+    "spaces_count": 92,
+    "events_count": 221,
+    "projects_count": 14,
+    "opportunities_count": 20,
+    "url": "https://mapacultural.cim-amfri.sc.gov.br/api/site/info",
+    "img": "https://mapacultural.cim-amfri.sc.gov.br/assets/img/logo-site.img.nwyr5h.png",
+    "name": "MAPA CULTURAL CIM-AMFRI / SC"
+  },
+  {
+    "description": "O Mapas Culturais é uma plataforma colaborativa que reúne informações sobre agentes, espaços, eventos, projetos culturais e oportunidades",
+    "version": "v7.5.27",
+    "timezone": "Etc/GMT+3",
+    "agents_count": 13,
+    "spaces_count": 0,
+    "events_count": 0,
+    "projects_count": 0,
+    "opportunities_count": 0,
+    "url": "https://mapadacultura.ma.gov.br/api/site/info",
+    "img": "https://mapadacultura.ma.gov.br/assets/img/logo-site.img.1vm5yjz.png",
+    "name": "Mapa Cultural do Maranhão",
+    },
+    {
+      "description": "O Mapas Culturais é uma plataforma colaborativa que reúne informações sobre agentes, espaços, eventos, projetos culturais e oportunidades",
+      "version": "v7.5.27",
+      "timezone": "Etc/GMT+3",
+      "agents_count": 14,
+      "spaces_count": 0,
+      "events_count": 0,
+      "projects_count": 0,
+      "opportunities_count": 0,
+      "url": "https://mapadacultura.secult.to.gov.br/api/site/info",
+      "img": "https://mapadacultura.secult.to.gov.br/assets/img/logo-site.img.hjhthi.png",
+      "name": "Mapa Cultural Tocantins",
+    },
 ]
 
 // DOM Elements
