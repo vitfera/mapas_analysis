@@ -275,15 +275,15 @@ const mockData = [
   {
       "name": "CulturAZ Santo Andr\u00e9",
       "description": "CulturaZ Santo Andr\u00e9",
-      "version": "v5.7.1",
-      "timezone": "America/Sao_Paulo",
-      "agents_count": 28092,
-      "spaces_count": 627,
-      "events_count": 5385,
-      "projects_count": 881,
-      "opportunities_count": 277,
-      "url": "http://culturaz.santoandre.sp.gov.br/api/site/info",
-      "img": "https://culturaz.santoandre.sp.gov.br/assets/img/logo-culturars-702213001-1720635685.png"
+      "version": "v7.5.30",
+      "timezone": "Etc/GMT+3",
+      "agents_count": 28265,
+      "spaces_count": 637,
+      "events_count": 5507,
+      "projects_count": 909,
+      "opportunities_count": 269,
+      "url": "https://culturaz.santoandre.sp.gov.br/api/site/info",
+      "img": "https://culturaz.santoandre.sp.gov.br/assets/img/logo-site.img.1ucx4nv.png"
   },
   {
       "name": "Mapa Cultural Osasco - SP",
