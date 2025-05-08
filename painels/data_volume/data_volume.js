@@ -234,16 +234,16 @@ const mockData = [
       "url": "http://varzeagrande.mt.mapas.cultura.gov.br/api/site/info"
   },
   {
-      "description": "A JP CULTURA \u00e9 uma plataforma colaborativa que re\u00fane informa\u00e7\u00f5es sobre agentes, espa\u00e7os, eventos, projetos culturais e oportunidades",
-      "version": "v6.0.14",
-      "timezone": "America/Fortaleza",
-      "agents_count": 2754,
-      "spaces_count": 145,
-      "events_count": 29,
+      "description": "A JP Cultura é uma plataforma colaborativa que reúne informações sobre agentes, espaços, eventos, projetos culturais e oportunidades",
+      "version": "v7.5.21",
+      "timezone": "America/Recife",
+      "agents_count": 2814,
+      "spaces_count": 146,
+      "events_count": 34,
       "projects_count": 55,
-      "opportunities_count": 28,
+      "opportunities_count": 29,
       "url": "http://jpcultura.joaopessoa.pb.gov.br/api/site/info",
-      "img": "https://jpcultura.joaopessoa.pb.gov.br/assets/img/logo-Mapas-JP--img--3949863201-1694686300.png",
+      "img": "https://jpcultura.joaopessoa.pb.gov.br/assets/img/logo-Mapas-PA.img.1vpatjg.png",
       "name": "JP CULTURA"
   },
   /*
