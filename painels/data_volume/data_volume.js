@@ -337,15 +337,15 @@ const mockData = [
   },
   {
     "description": "O Mapa Cultural AGIMOS é uma ferramenta de gestão cultural da Agência de Indústria Criativa e Mobilização Social da UFPEL que busca a estruturação de produções culturais e políticas públicas para o setor.",
-    "version": "v7.3.50",
+    "version": "v7.5.41",
     "timezone": "America/Sao_Paulo",
-    "agents_count": 433,
-    "spaces_count": 89,
-    "events_count": 129,
+    "agents_count": 455,
+    "spaces_count": 91,
+    "events_count": 134,
     "projects_count": 7,
-    "opportunities_count": 12,
-    "url": "https://mapacultural.agimos.org.br/api/site/info",
-    "img": "https://mapacultural.agimos.org.br/assets/img/logo-UFPEL.img.18f4xve.png",
+    "opportunities_count": 10,
+    "url": "https://mapacultural.ufpel.edu.br/api/site/info",
+    "img": "https://mapacultural.ufpel.edu.br/assets/img/logo-UFPEL.img.3ep1dn.png",
     "name": "Mapa Cultural AGIMOS"
   },
   {
