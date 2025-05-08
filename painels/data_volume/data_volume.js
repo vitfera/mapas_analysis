@@ -42,13 +42,13 @@ const mockData = [
   {
       "name": "Mapa Cultural do Cear\u00e1",
       "description": "O Mapa Cultural do Cear\u00e1 \u00e9 a plataforma livre, gratuita e colaborativa de mapeamento da Secretaria da Cultura do Estado do Cear\u00e1 sobre cen\u00c3\u00a1rio cultural cearense. Ficou mais f\u00c3\u00a1cil se programar para conhecer as op\u00c3\u00a7\u00c3\u00b5es culturais que as cidades cearenses oferecem: shows musicais, espet\u00c3\u00a1culos teatrais, sess\u00c3\u00b5es de cinema, saraus, entre outras. Al\u00e9m de conferir a agenda de eventos, voc\u00c3\u00aa tamb\u00e9m pode colaborar na gest\u00c3\u00a3o da cultura do estado: basta criar seu perfil de agente cultural. A partir deste cadastro, fica mais f\u00c3\u00a1cil participar dos editais e programas da Secretaria e tamb\u00e9m divulgar seus eventos, espa\u00c3\u00a7os ou projetos.",
-      "version": "v5.9.8",
+      "version": "v5.9.11",
       "timezone": "America/Fortaleza",
-      "agents_count": 129632,
-      "spaces_count": 6220,
-      "events_count": 9735,
-      "projects_count": 3967,
-      "opportunities_count": 1879,
+      "agents_count": 130912,
+      "spaces_count": 6289,
+      "events_count": 9865,
+      "projects_count": 4100,
+      "opportunities_count": 1953,
       "url": "https://mapacultural.secult.ce.gov.br/api/site/info",
       "img": "https://mapacultural.secult.ce.gov.br/assets/img/logo-ceara-2396208294-1740421520.png"
 
