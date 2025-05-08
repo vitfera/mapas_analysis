@@ -403,14 +403,15 @@ const mockData = [
   },
   {
     "description": "O Mapas Culturais é uma plataforma colaborativa que reúne informações sobre agentes, espaços, eventos, projetos culturais e oportunidades",
-    "version": "v7.5.28",
+    "version": "v7.5.40",
     "timezone": "Etc/GMT+3",
-    "agents_count": 140,
+    "agents_count": 268,
     "spaces_count": 1,
     "events_count": 2,
-    "projects_count": 0,
+    "projects_count": 3,
     "opportunities_count": 4,
     "url": "https://mapacultural.parauapebas.pa.gov.br/api/site/info",
+    "img": "https://mapacultural.parauapebas.pa.gov.br/assets/img/logo-site.img.1hmkf1q.png",
     "name": "Mapas Culturais"
   },
   {
