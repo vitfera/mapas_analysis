@@ -519,6 +519,19 @@ const mockData = [
       "img": "http://mapa.cultura.aracaju.se.gov.br/files/subsite/3/file/250/marca-da-org-2-d4c86696a50b99e5b4c787d2df163111.png",
       "name": "Mapa Cultural de Aracaju/SE - Mapas Culturais",
     },
+    {
+      "description": "O Mapas Culturais Sarandiense é uma ferramenta de gestão cultural, que garante a estruturação de Sistemas de Informações e Indicadores. A plataforma oferece soluções para o mapeamento colaborativo de agentes culturais, realização de todas as etapas de editais e fomentos, organização de uma agenda cultural e divulgação de espaços culturais do território.",
+      "version": "v7.5.41",
+      "timezone": "Etc/GMT+3",
+      "agents_count": 13,
+      "spaces_count": 2,
+      "events_count": 1,
+      "projects_count": 0,
+      "opportunities_count": 0,
+      "url": "https://cultura.sarandi.pr.gov.br/api/site/info",
+      "img": "https://cultura.sarandi.pr.gov.br/assets/img/logoSecult.img.1sp4dp4.png",
+      "name": "Mapas Culturais do Município de Sarandi/PR",
+    },
 ]
 
 // DOM Elements
