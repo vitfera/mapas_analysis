@@ -390,12 +390,12 @@ const mockData = [
   {
 
     "description": "A Plataforma de Cultura de Aparecida de Goiânia é uma plataforma colaborativa que reúne informações sobre agentes, espaços, eventos, projetos culturais e oportunidades",
-    "version": "v7.5.27",
+    "version": "v7.5.41",
     "timezone": "Etc/GMT+3",
-    "agents_count": 1687,
-    "spaces_count": 21,
+    "agents_count": 1710,
+    "spaces_count": 22,
     "events_count": 14,
-    "projects_count": 28,
+    "projects_count": 30,
     "opportunities_count": 20,
     "url": "https://portaldacultura.aparecida.go.gov.br/api/site/info",
     "img": "https://portaldacultura.aparecida.go.gov.br/assets/img/logoAparecida.img.1gg72.png",
