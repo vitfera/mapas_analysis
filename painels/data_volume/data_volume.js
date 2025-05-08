@@ -1,14 +1,14 @@
 // Data structure
 const mockData = [
   {
-      "description": "O Mapas Culturais \u00e9 uma plataforma livre para mapeamento cultural.",
-      "version": "v7.6.0-minc15",
+      "description": "O Mapas Culturais é uma plataforma livre para mapeamento cultural.",
+      "version": "v7.6.0-minc25",
       "timezone": "Etc/GMT+3",
-      "agents_count": 144230,
-      "spaces_count": 21909,
-      "events_count": 7555,
-      "projects_count": 4485,
-      "opportunities_count": 247,
+      "agents_count": 153517,
+      "spaces_count": 22155,
+      "events_count": 7724,
+      "projects_count": 7320,
+      "opportunities_count": 266,
       "url": "https://mapa.cultura.gov.br/api/site/info",
       "img": "https://mapa.cultura.gov.br/assets/mapa.cultura.gov.br/svg/main-logo.img.sulcyn.svg",
       "name": "Mapa da Cultura – MinC"
@@ -42,13 +42,13 @@ const mockData = [
   {
       "name": "Mapa Cultural do Cear\u00e1",
       "description": "O Mapa Cultural do Cear\u00e1 \u00e9 a plataforma livre, gratuita e colaborativa de mapeamento da Secretaria da Cultura do Estado do Cear\u00e1 sobre cen\u00c3\u00a1rio cultural cearense. Ficou mais f\u00c3\u00a1cil se programar para conhecer as op\u00c3\u00a7\u00c3\u00b5es culturais que as cidades cearenses oferecem: shows musicais, espet\u00c3\u00a1culos teatrais, sess\u00c3\u00b5es de cinema, saraus, entre outras. Al\u00e9m de conferir a agenda de eventos, voc\u00c3\u00aa tamb\u00e9m pode colaborar na gest\u00c3\u00a3o da cultura do estado: basta criar seu perfil de agente cultural. A partir deste cadastro, fica mais f\u00c3\u00a1cil participar dos editais e programas da Secretaria e tamb\u00e9m divulgar seus eventos, espa\u00c3\u00a7os ou projetos.",
-      "version": "v5.9.8",
+      "version": "v5.9.11",
       "timezone": "America/Fortaleza",
-      "agents_count": 129632,
-      "spaces_count": 6220,
-      "events_count": 9735,
-      "projects_count": 3967,
-      "opportunities_count": 1879,
+      "agents_count": 130912,
+      "spaces_count": 6289,
+      "events_count": 9865,
+      "projects_count": 4100,
+      "opportunities_count": 1953,
       "url": "https://mapacultural.secult.ce.gov.br/api/site/info",
       "img": "https://mapacultural.secult.ce.gov.br/assets/img/logo-ceara-2396208294-1740421520.png"
 
@@ -234,16 +234,16 @@ const mockData = [
       "url": "http://varzeagrande.mt.mapas.cultura.gov.br/api/site/info"
   },
   {
-      "description": "A JP CULTURA \u00e9 uma plataforma colaborativa que re\u00fane informa\u00e7\u00f5es sobre agentes, espa\u00e7os, eventos, projetos culturais e oportunidades",
-      "version": "v6.0.14",
-      "timezone": "America/Fortaleza",
-      "agents_count": 2754,
-      "spaces_count": 145,
-      "events_count": 29,
+      "description": "A JP Cultura é uma plataforma colaborativa que reúne informações sobre agentes, espaços, eventos, projetos culturais e oportunidades",
+      "version": "v7.5.21",
+      "timezone": "America/Recife",
+      "agents_count": 2814,
+      "spaces_count": 146,
+      "events_count": 34,
       "projects_count": 55,
-      "opportunities_count": 28,
+      "opportunities_count": 29,
       "url": "http://jpcultura.joaopessoa.pb.gov.br/api/site/info",
-      "img": "https://jpcultura.joaopessoa.pb.gov.br/assets/img/logo-Mapas-JP--img--3949863201-1694686300.png",
+      "img": "https://jpcultura.joaopessoa.pb.gov.br/assets/img/logo-Mapas-PA.img.1vpatjg.png",
       "name": "JP CULTURA"
   },
   /*
@@ -337,15 +337,15 @@ const mockData = [
   },
   {
     "description": "O Mapa Cultural AGIMOS é uma ferramenta de gestão cultural da Agência de Indústria Criativa e Mobilização Social da UFPEL que busca a estruturação de produções culturais e políticas públicas para o setor.",
-    "version": "v7.3.50",
+    "version": "v7.5.41",
     "timezone": "America/Sao_Paulo",
-    "agents_count": 433,
-    "spaces_count": 89,
-    "events_count": 129,
+    "agents_count": 455,
+    "spaces_count": 91,
+    "events_count": 134,
     "projects_count": 7,
-    "opportunities_count": 12,
-    "url": "https://mapacultural.agimos.org.br/api/site/info",
-    "img": "https://mapacultural.agimos.org.br/assets/img/logo-UFPEL.img.18f4xve.png",
+    "opportunities_count": 10,
+    "url": "https://mapacultural.ufpel.edu.br/api/site/info",
+    "img": "https://mapacultural.ufpel.edu.br/assets/img/logo-UFPEL.img.3ep1dn.png",
     "name": "Mapa Cultural AGIMOS"
   },
   {
@@ -390,12 +390,12 @@ const mockData = [
   {
 
     "description": "A Plataforma de Cultura de Aparecida de Goiânia é uma plataforma colaborativa que reúne informações sobre agentes, espaços, eventos, projetos culturais e oportunidades",
-    "version": "v7.5.27",
+    "version": "v7.5.41",
     "timezone": "Etc/GMT+3",
-    "agents_count": 1687,
-    "spaces_count": 21,
+    "agents_count": 1710,
+    "spaces_count": 22,
     "events_count": 14,
-    "projects_count": 28,
+    "projects_count": 30,
     "opportunities_count": 20,
     "url": "https://portaldacultura.aparecida.go.gov.br/api/site/info",
     "img": "https://portaldacultura.aparecida.go.gov.br/assets/img/logoAparecida.img.1gg72.png",
