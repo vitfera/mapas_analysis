@@ -532,6 +532,19 @@ const mockData = [
       "img": "https://cultura.sarandi.pr.gov.br/assets/img/logoSecult.img.1sp4dp4.png",
       "name": "Mapas Culturais do Município de Sarandi/PR",
     },
+    {
+      "description": "O Mapas Culturais é uma plataforma livre para mapeamento cultural.",
+      "version": "v7.6.0-minc25",
+      "timezone": "Etc/GMT+3",
+      "agents_count": 153517,
+      "spaces_count": 0,
+      "events_count": 0,
+      "projects_count": 2666,
+      "opportunities_count": 5,
+      "url": "https://rededasartes.cultura.gov.br/api/site/info",
+      "img": "https://rededasartes.cultura.gov.br/assets/rededasartes.cultura.gov.br/img/logo-site.img.1cmq6ay.png",
+      "name": "Mapas Culturais",
+    },
 ]
 
 // DOM Elements
