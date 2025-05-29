@@ -546,6 +546,30 @@ const mockData = [
       "img": "https://rededasartes.cultura.gov.br/assets/rededasartes.cultura.gov.br/img/logo-site.img.1cmq6ay.png",
       "name": "Mapas Culturais",
     },
+    {
+      "description": "O Mapa Cultural de São Bernardo é uma plataforma colaborativa que reúne informações sobre agentes, espaços, eventos, projetos culturais e oportunidades",
+      "version": "v7.5.46",
+      "timezone": "Etc/GMT+3",
+      "agents_count": 187,
+      "spaces_count": 37,
+      "events_count": 92,
+      "projects_count": 6,
+      "opportunities_count": 1,
+      "url": "https://mapacultural.saobernardo.sp.gov.br/api/site/info",
+      "name": "O Mapa Cultural de São Bernardo",
+    },
+    {
+      "description": "O Mapas Culturais é uma plataforma livre para mapeamento cultural.",
+      "version": "v7.6.0-minc19",
+      "timezone": "Etc/GMT+3",
+      "agents_count": 80,
+      "spaces_count": 53,
+      "events_count": 17,
+      "projects_count": 4,
+      "opportunities_count": 2,
+      "url": "https://www.mapadacultura.pi.gov.br/api/site/info",
+      "name": "Mapas Culturais",
+    },
 ]
 
 // DOM Elements
