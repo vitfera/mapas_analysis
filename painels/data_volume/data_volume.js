@@ -2,13 +2,13 @@
 const mockData = [
   {
       "description": "O Mapas Culturais é uma plataforma livre para mapeamento cultural.",
-      "version": "v7.6.0-minc25",
+      "version": "v7.6.0-minc25.1",
       "timezone": "Etc/GMT+3",
-      "agents_count": 153517,
-      "spaces_count": 22155,
-      "events_count": 7724,
-      "projects_count": 7320,
-      "opportunities_count": 266,
+      "agents_count": 158063,
+      "spaces_count": 22249,
+      "events_count": 7785,
+      "projects_count": 8895,
+      "opportunities_count": 268,
       "url": "https://mapa.cultura.gov.br/api/site/info",
       "img": "https://mapa.cultura.gov.br/assets/mapa.cultura.gov.br/svg/main-logo.img.sulcyn.svg",
       "name": "Mapa da Cultura – MinC"
