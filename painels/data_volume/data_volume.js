@@ -17,15 +17,15 @@ const mockData = [
   {
       "name": "Mapa Uruguai",
       "description": "Plataforma de Informaciones culturales",
-      "version": "v4.6.3",
-      "timezone": "America/Argentina/Buenos_Aires",
-      "agents_count": 23131,
-      "spaces_count": 1711,
-      "events_count": 461,
-      "projects_count": 317,
-      "opportunities_count": 86,
+      "version": "develop",
+      "timezone": "America/Montevideo",
+      "agents_count": 23566,
+      "spaces_count": 1717,
+      "events_count": 470,
+      "projects_count": 321,
+      "opportunities_count": 88,
       "url": "http://culturaenlinea.uy/api/site/info",
-      "img": "https://raw.githubusercontent.com/LabDoFuturo/mapas_analysis/refs/heads/main/painels/data_volume/logo/mapa-uruguai.png"
+      "img": "https://culturaenlinea.uy/assets/svg/main-logo.img.1dxqmen.svg"
   },
   {
       "name": "Pontos de Mem\u00f3ria/BR",
