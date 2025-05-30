@@ -197,15 +197,15 @@ const mockData = [
   {
       "name": "Mapa Cultural BH",
       "description": "O Mapas Culturais \u00e9 uma plataforma colaborativa que re\u00fane informa\u00e7\u00f5es sobre agentes, espa\u00e7os, eventos, projetos culturais e oportunidades",
-      "version": "v5.6.7",
-      "timezone": "America/Fortaleza",
-      "agents_count": 15438,
-      "spaces_count": 2036,
-      "events_count": 2267,
-      "projects_count": 675,
-      "opportunities_count": 124,
+      "version": "v7.5.42",
+      "timezone": "America/Sao_Paulo",
+      "agents_count": 15694,
+      "spaces_count": 2038,
+      "events_count": 2273,
+      "projects_count": 701,
+      "opportunities_count": 123,
       "url": "http://mapaculturalbh.pbh.gov.br/api/site/info",
-      "img": "https://mapaculturalbh.pbh.gov.br/assets/img/logo-site-4136163235-1600958318.png",
+      "img": "https://mapaculturalbh.pbh.gov.br/assets/img/logo-Mapas-BH.img.ealugh.png",
       "name": "Mapa Cultural BH"
   },
   {
