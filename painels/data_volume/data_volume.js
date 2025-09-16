@@ -603,6 +603,19 @@ function init() {
   fetchData();
 }
 
+// Validate if API data contains expected fields
+function isValidAPIData(data) {
+  if (!data || typeof data !== 'object') {
+    return false;
+  }
+  
+  // Check if at least some expected fields are present
+  const expectedFields = ['version', 'agents_count', 'spaces_count', 'events_count', 'projects_count', 'opportunities_count'];
+  const hasValidFields = expectedFields.some(field => data.hasOwnProperty(field) && data[field] !== undefined);
+  
+  return hasValidFields;
+}
+
 // Fetch dynamic data from each API endpoint
 async function fetchSiteInfo(url, timeout = 10000) {
   const controller = new AbortController();
@@ -625,6 +638,12 @@ async function fetchSiteInfo(url, timeout = 10000) {
     }
     
     const data = await response.json();
+    
+    // Validate API data before returning
+    if (!isValidAPIData(data)) {
+      throw new Error('Invalid API response - missing expected fields');
+    }
+    
     return data;
   } catch (error) {
     clearTimeout(timeoutId);
@@ -677,10 +696,23 @@ async function updateDataWithAPIs() {
         successCount++;
         console.log(`✓ Updated data for ${itemName}`);
       } else {
-        // Mark as using cached data
-        item.dataSource = 'cached';
+        // API failed - use data from initial array (mockData) as fallback
+        const originalItem = mockData[i];
+        item.version = originalItem.version;
+        item.timezone = originalItem.timezone;
+        item.agents_count = originalItem.agents_count;
+        item.spaces_count = originalItem.spaces_count;
+        item.events_count = originalItem.events_count;
+        item.projects_count = originalItem.projects_count;
+        item.opportunities_count = originalItem.opportunities_count;
+        item.description = originalItem.description;
+        
+        // Mark as using fallback data from initial array
+        item.dataSource = 'fallback';
+        item.fallbackReason = 'API indisponível - usando dados do array inicial';
+        
         failureCount++;
-        console.log(`✗ Using cached data for ${itemName}`);
+        console.log(`✗ API failed for ${itemName} - using fallback data from initial array`);
       }
     } else {
       // No URL available, use static data
@@ -690,8 +722,8 @@ async function updateDataWithAPIs() {
     updatedData.push(item);
   }
   
-  updateLoadingStatus(`Finalizando... ${successCount} atualizados, ${failureCount} usando cache`);
-  console.log(`Data update summary: ${successCount} successful, ${failureCount} failed, ${mockData.length - successCount - failureCount} static`);
+  updateLoadingStatus(`Finalizando... ${successCount} atualizados, ${failureCount} usando fallback`);
+  console.log(`Data update summary: ${successCount} successful API calls, ${failureCount} using fallback data, ${mockData.length - successCount - failureCount} static entries`);
   
   return updatedData;
 }
@@ -799,6 +831,10 @@ function createCard(data, index) {
       case 'api':
         statusText = `✓ Atualizado ${data.lastUpdated ? new Date(data.lastUpdated).toLocaleTimeString('pt-BR') : ''}`;
         statusClass = 'status-updated';
+        break;
+      case 'fallback':
+        statusText = `🔄 Fallback - ${data.fallbackReason || 'Array inicial'}`;
+        statusClass = 'status-fallback';
         break;
       case 'cached':
         statusText = '⚠ Dados em cache';

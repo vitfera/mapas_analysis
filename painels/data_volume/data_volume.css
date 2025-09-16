@@ -349,6 +349,12 @@ footer {
   border: 1px solid #ffeaa7;
 }
 
+.status-fallback {
+  background-color: #ffeaa7;
+  color: #b45309;
+  border: 1px solid #fdd835;
+}
+
 .status-static {
   background-color: #e2e3e5;
   color: #383d41;
