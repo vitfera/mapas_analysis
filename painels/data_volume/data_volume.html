@@ -9,14 +9,19 @@
 </head>
 <body>
   <header>
-    <h1>Painel Mapas do Brasil - Lab do Futuro</h1>
-    <p  id="total-summary"></p>
+    <div class="header-content">
+      <h1>Painel Mapas do Brasil - Lab do Futuro</h1>
+      <button id="refresh-button" class="refresh-btn" title="Atualizar dados das APIs">
+        🔄 Atualizar Dados
+      </button>
+    </div>
+    <p id="total-summary"></p>
   </header>
   
   <main>
     <div class="loading-container" id="loading">
       <div class="loading-spinner"></div>
-      <p>Carregando dados...</p>
+      <p class="loading-text">Carregando dados...</p>
     </div>
     
     <div class="error-container" id="error" style="display: none;">

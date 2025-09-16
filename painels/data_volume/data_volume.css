@@ -68,6 +68,45 @@ header {
   box-shadow: var(--shadow);
 }
 
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.refresh-btn {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  padding: 0.5rem 1rem;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: var(--transition);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.refresh-btn:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-color: rgba(255, 255, 255, 0.5);
+  transform: translateY(-1px);
+}
+
+.refresh-btn:active {
+  transform: translateY(0);
+}
+
+.refresh-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
 main {
   flex: 1;
   padding: var(--spacing-lg);
@@ -263,8 +302,18 @@ footer {
     padding: var(--spacing-md);
   }
   
+  .header-content {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+  
   h1 {
     font-size: 1.5rem;
+  }
+  
+  .refresh-btn {
+    align-self: center;
   }
   
   .card-stats {
@@ -276,6 +325,34 @@ footer {
 :focus {
   outline: 3px solid var(--primary-color);
   outline-offset: 2px;
+}
+
+/* Data Status Indicators */
+.data-status {
+  font-size: 0.75rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  margin-top: 0.5rem;
+  font-weight: 500;
+  display: inline-block;
+}
+
+.status-updated {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+.status-cached {
+  background-color: #fff3cd;
+  color: #856404;
+  border: 1px solid #ffeaa7;
+}
+
+.status-static {
+  background-color: #e2e3e5;
+  color: #383d41;
+  border: 1px solid #c6c8ca;
 }
 
 /* For screen readers */
